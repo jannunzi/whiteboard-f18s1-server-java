@@ -1,0 +1,79 @@
+<html>
+<head>
+</head>
+<body>
+
+<h1 id="hello">Welcome to JavaScript</h1>
+
+<h1>House</h1>
+<ul>
+    <li id="rooms"></li>
+    <li id="baths"></li>
+    <li id="squareFeet"></li>
+</ul>
+
+
+<script>
+    var house = {
+        rooms: 3,
+        baths: 3,
+        sqf: 1300
+    };
+    document.getElementById("rooms").innerHTML = house.rooms;
+    document.getElementById("baths").innerHTML = house.baths;
+    document.getElementById("squareFeet").innerHTML = house.sqf;
+
+</script>
+
+
+
+<hr>
+
+
+<input id="a" value="123"/>
+<input id="b"/> =
+<span  id="c"></span>
+<br/>
+<button onclick="addAplusB()">
+    Add A and B
+</button>
+
+
+<script>
+
+    function addAplusB() {
+        var a = document.getElementById("a").value;
+        a = parseInt(a);
+        var b = document.getElementById("b").value;
+        b = parseInt(b);
+        document.getElementById("c").innerHTML = a + b;
+    }
+
+    // var theElement = document.getElementById("a");
+    // var theValue = theElement.value;
+    // alert(theValue);
+
+</script>
+
+<br/>
+
+
+<h1>Simple Math</h1>
+2 + 3 = <span id="result"></span>
+
+<script>
+    var result = document.getElementById("result");
+    result.innerHTML = 2 + 3;
+</script>
+
+<br/>
+
+
+<button onclick="sayHello()">
+    Say Hello
+</button>
+
+<script src="hello.js"></script>
+
+</body>
+</html>
